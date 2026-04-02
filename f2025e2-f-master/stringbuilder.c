@@ -63,7 +63,7 @@ void sb_insert(struct StringBuilder* sb, char* str, size_t idx) {
 }
 
 char* sb_toString(struct StringBuilder* sb) {
-    char* res = malloc(sb->size);
+    char* res = malloc(sb->size + 1);
     strcpy(res, sb->content);
     return res;
 }
